@@ -1,0 +1,40 @@
+.Reactive {
+  display: flex;
+}
+
+.Reactive__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Reactive__label {
+  font-size: 1rem;
+  color: darkgrey;
+  font-weight: 400;
+}
+
+.Reactive__input {
+  height: 20px;
+  width: 230px;
+  margin: 10px;
+}
+
+.Reactive__input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+
+.Reactive__confirm {
+  width: 120px;
+  height: 40px;
+  background: deeppink;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.Reactive__confirm:disabled {
+  background: lightpink;
+}

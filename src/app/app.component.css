@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto"
+}
+
+.App__title {
+  color: hotpink;
+}
