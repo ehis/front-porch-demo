@@ -1,13 +1,13 @@
 <div class="Reactive">
-	<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+	<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
 		<div class="Reactive__section">
 			<label class="Reactive__label" for="username">Enter username</label>
-			<input class="Reactive__input" name="username" type="email" formControlName="username">
-      <small *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty">Email is required</small>
+			<input class="Reactive__input" name="username" type="text" formControlName="username">
+      <small *ngIf="!userForm.controls.username.valid && userForm.controls.username.dirty">This field is required</small>
       <label class="Reactive__label" for="password">Enter password</label>
 			<input class="Reactive__input" name="password" type="password" formControlName="password">
-      <small *ngIf="!registerForm.controls.password.valid && registerForm.controls.password.dirty">Must have at least 6 characters</small>
-      <button class="Reactive__confirm" [disabled]="!registerForm.valid">Confirm</button>
+      <small *ngIf="!userForm.controls.password.valid && userForm.controls.password.dirty">Must have at least 6 characters</small>
+      <button class="Reactive__confirm" [disabled]="!userForm.valid">Confirm</button>
 		</div>
 	</form>
 </div>

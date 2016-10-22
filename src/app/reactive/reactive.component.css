@@ -2,6 +2,10 @@
   display: flex;
 }
 
+small {
+  color: red;
+}
+
 .Reactive__section {
   display: flex;
   flex-direction: column;

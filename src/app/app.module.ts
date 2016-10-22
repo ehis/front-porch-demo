@@ -4,13 +4,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
+import { TemplateComponent } from './template/template.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
+    TemplateComponent,
     ReactiveComponent
   ],
   imports: [

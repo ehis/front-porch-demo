@@ -7,27 +7,27 @@ import { FormGroup, Validators, FormBuilder } from '@angular/forms';
   styleUrls: ['./reactive.component.css']
 })
 export class ReactiveComponent implements OnInit {
-  private registerForm: FormGroup;
+  private userForm: FormGroup;
 
   constructor(fb: FormBuilder) {
-    this.registerForm = fb.group({
+    this.userForm = fb.group({
       'username': ['', Validators.required],
       'password': ['', [Validators.minLength(6), Validators.required]]
     });
    }
 
   ngOnInit() {
-    this.registerForm.valueChanges
+    this.userForm.valueChanges
       .subscribe((value) => {
         console.log(value)
-        const usernameControl = this.registerForm.get('username');
-        const passwordControl = this.registerForm.get('password');
+        const usernameControl = this.userForm.get('username');
+        const passwordControl = this.userForm.get('password');
         console.log('username control', usernameControl);
         console.log('password control', passwordControl);
       });
   }
 
   onSubmit() {
-    console.log('reactive form', this.registerForm.value);
+    console.log('reactive form', this.userForm.value);
   }
 }

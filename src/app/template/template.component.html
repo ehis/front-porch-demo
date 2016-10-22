@@ -1,0 +1,13 @@
+<div class="Template">
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div class="Template__section">
+      <label class="Template__label" for="username">Enter username</label>
+      <input class="Template__input" name="username" type="text" [(ngModel)]="user.username" required #username="ngModel">
+      <small *ngIf="username.errors && (username.dirty || username.touched)">This field is required</small>
+      <label class="Template__label" for="password">Enter password</label>
+      <input class="Template__input" name="password" type="password" minlength="6" [(ngModel)]="user.password" required #password="ngModel">
+      <small *ngIf="password.errors && (password.dirty || password.touched)">Must have at least 6 characters</small>
+      <button class="Template__confirm" [disabled]="!userForm.valid">Confirm</button>
+    </div>
+  </form>
+</div>

@@ -1,26 +1,30 @@
-.Register {
+.Template {
   display: flex;
 }
 
-.Register__section {
+small {
+  color: red;
+}
+
+.Template__section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Register__label {
+.Template__label {
   font-size: 1rem;
   color: darkgrey;
   font-weight: 400;
 }
 
-.Register__input {
+.Template__input {
   height: 20px;
   width: 230px;
   margin: 10px;
 }
 
-.Register__confirm {
+.Template__confirm {
   width: 120px;
   height: 40px;
   background: deeppink;
@@ -31,6 +35,6 @@
   cursor: pointer;
 }
 
-.Register__confirm:disabled {
+.Template__confirm:disabled {
   background: lightpink;
 }
