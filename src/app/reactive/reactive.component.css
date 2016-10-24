@@ -24,7 +24,7 @@ small {
   margin: 10px;
 }
 
-.Reactive__input.ng-invalid.ng-dirty {
+.Reactive__input.ng-invalid.ng-dirty.ng-touched {
   border: 1px solid red;
 }
 

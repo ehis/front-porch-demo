@@ -24,6 +24,10 @@ small {
   margin: 10px;
 }
 
+.Template__input.ng-invalid.ng-dirty.ng-touched {
+  border: 1px solid red;
+}
+
 .Template__confirm {
   width: 120px;
   height: 40px;
